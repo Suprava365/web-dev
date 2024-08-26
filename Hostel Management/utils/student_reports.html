@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Student Reports</title>
+    <link rel="stylesheet" href="student_reports.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hostel Management System</h1>
+        <nav>
+            <ul>
+               
+                
+                <li><a href="./hostel_management.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+                    <div class="dropdown-content">
+                        <a href="./add_new_room.html">Add New Room</a>
+                        <a href="./student_registration.html">Add New Student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Report</a>
+                    <div class="dropdown-content">
+                      <a href="./room_reports.html">Room Report</a>
+                      <a href="./student_reports.html">Student Report</a>
+                    </div>
+                  </li>
+                <li><a onclick="handleLogout()">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h2>Student Reports</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Date Of Birth</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="image1.jpg" alt="Student Image" class="student-image"></td>
+                    <td>Anu Regmi</td>
+                    <td>987654321</td>
+                    <td>Regmianu12@gmail.com</td>
+                    <td>12 January, 2013</td>
+                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="image2.jpg" alt="Student Image" class="student-image"></td>
+                    <td>Anisha khatiwada</td>
+                    <td>987654321</td>
+                    <td>Anishakhatiwada@gmail.com</td>
+                    <td>12 January, 2013</td>
+                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function handleLogout() {
+            alert("Logout clicked")
+        }
+    </script>
+</body>
+</html>

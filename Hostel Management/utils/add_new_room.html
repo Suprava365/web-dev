@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Add New Room</title>
+    <link rel="stylesheet" href="add_new_room.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hostel Management System</h1>
+        <nav>
+            <ul>
+               
+                
+                <li><a href="#">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+                    <div class="dropdown-content">
+                        <a href="./add_new_room.html">Add New Room</a>
+                        <a href="./student_registration.html">Add New Student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Report</a>
+                    <div class="dropdown-content">
+                      <a href="./room_reports.html">Room Report</a>
+                      <a href="./student_reports.html">Student Report</a>
+                    </div>
+                  </li>
+                <li><a  onclick="handleLogout()">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h2>Add New Room</h2>
+        <form>
+            <label for="roomName">Room Name</label>
+            <input type="text" id="roomName" name="roomName" placeholder="Room 101">
+
+            <label for="roomType">Select Type</label>
+            <select id="roomType" name="roomType">
+                <option value="cooler">Cooler Room</option>
+                <option value="normal">Normal Room</option>
+                <option value="ac">AC Room</option>
+            </select>
+
+            <label for="floor">Floor</label>
+            <input type="text" id="floor" name="floor" placeholder="First Floor">
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="First Floor Room" rows="4"></textarea>
+
+            <button type="submit">Save Room</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+
+    <script>
+        function handleLogout() {
+            alert("Logout clicked")
+        }
+    </script>
+</body>
+
+</html>

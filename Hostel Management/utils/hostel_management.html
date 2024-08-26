@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="hostel_management.css" />
+  </head>
+
+  <body>
+    <div class="header">
+        <h1>Hostel Management System</h1>
+        <nav>
+            <ul>
+               
+                
+                <li><a href="./hostel_management.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+                    <div class="dropdown-content">
+                        <a href="./add_new_room.html">Add New Room</a>
+                        <a href="./student_registration.html">Add New Student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Report</a>
+                    <div class="dropdown-content">
+                      <a href="./room_reports.html">Room Report</a>
+                      <a href="./student_reports.html">Student Report</a>
+                    </div>
+                  </li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+      <h2>Welcome to Hostel Management System</h2>
+      <div class="menu">
+        <a href="./add_new_room.html" id="a">Add New Room</a>
+        <a href="./student_registration.html" id="a">Add New Student</a>
+        <a href="./room_reports.html" id="a">Room Reports</a>
+        <a href="./student_reports.html" id="a">Student Report</a>
+        <a  id="a" onclick="handleLogout()">Logout</a>
+      </div>
+    </div>
+
+    <script>
+        function handleLogout() {
+            alert("Logout clicked")
+        }
+    </script>
+  </body>
+</html>

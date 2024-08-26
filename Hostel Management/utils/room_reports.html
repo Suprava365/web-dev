@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Room Reports</title>
+    <link rel="stylesheet" href="room_reports.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hostel Management System</h1>
+        <nav>
+            <ul>
+               
+                
+                <li><a href="./hostel_management.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+                    <div class="dropdown-content">
+                        <a href="./add_new_room.html">Add New Room</a>
+                        <a href="./student_registration.html">Add New Student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Report</a>
+                    <div class="dropdown-content">
+                      <a href="./room_reports.html">Room Report</a>
+                      <a href="./student_reports.html">Student Report</a>
+                    </div>
+                  </li>
+                <li><a onclick="handleLogout()">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h2>Room Reports</h2>
+        <div class="search-bar">
+            <label for="search">Search :</label>
+            <input type="text" id="search">
+            <button>Search</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Floor</th>
+                    <th>Total Beds</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Room 101</td>
+                    <td>Cooler Room</td>
+                    <td>First Floor</td>
+                    <td>4 Beds</td>
+                    <td>Edit | Delete | View Beds | Add Beds</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Room 102</td>
+                    <td>Normal Room</td>
+                    <td>First Floor</td>
+                    <td>4 Beds</td>
+                    <td>Edit | Delete | View Beds | Add Beds</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Room 103</td>
+                    <td>AC Room</td>
+                    <td>First Floor</td>
+                    <td>2 Beds</td>
+                    <td>Edit | Delete | View Beds | Add Beds</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function handleLogout() {
+            alert("Logout clicked")
+        }
+    </script>
+</body>
+</html>

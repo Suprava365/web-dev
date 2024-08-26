@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Student Registration</title>
+    <link rel="stylesheet" href="student_registration.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hostel Management System</h1>
+        <nav>
+            <ul>
+               
+                
+                <li><a href="./hostel_management.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Administration</a>
+                    <div class="dropdown-content">
+                        <a href="./add_new_room.html">Add New Room</a>
+                        <a href="./student_registration.html">Add New Student</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Report</a>
+                    <div class="dropdown-content">
+                      <a href="./room_reports.html">Room Report</a>
+                      <a href="./student_reports.html">Student Report</a>
+                    </div>
+                  </li>
+                <li><a onclick="handleLogout()">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h2>Student Registration</h2>
+        <form action="submit_student.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="allot_bed">Allot Bed</label>
+            <select id="allot_bed" name="allot_bed" required>
+                <option value="">Please Select</option>
+                <option value="1A">1A</option>
+                <option value="1B">1B</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address1">Address Line 1</label>
+            <input type="text" id="address1" name="address1" required>
+
+            <label for="address2">Address Line 2</label>
+            <input type="text" id="address2" name="address2">
+
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+                <option value="">Please Select</option>
+                <!-- Add city options -->
+            </select>
+
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+                <option value="">Please Select</option>
+                <!-- Add state options -->
+            </select>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Please Select</option>
+                <!-- Add country options -->
+            </select>
+
+            <label for="photo">Photo</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <div class="image-gallery">
+        <img src="./images/hostel.jpg" alt="Bunk beds">
+        <img src="./images/mint.jpg" alt="Hallway with beds">
+    </div>
+
+
+    <script>
+        function handleLogout() {
+            alert("Logout clicked")
+        }
+    </script>
+</body>
+</html>
